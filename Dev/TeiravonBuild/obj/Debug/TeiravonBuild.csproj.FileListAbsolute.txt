@@ -1,0 +1,13 @@
+C:\Users\Stephen Baynham\projects\dialogue\Dev\TeiravonBuild\bin\Debug\TeiravonBuild.exe
+C:\Users\Stephen Baynham\projects\dialogue\Dev\TeiravonBuild\bin\Debug\TeiravonBuild.pdb
+C:\Users\Stephen Baynham\projects\dialogue\Dev\TeiravonBuild\bin\Debug\1.dll
+C:\Users\Stephen Baynham\projects\dialogue\Dev\TeiravonBuild\bin\Debug\WeifenLuo.WinFormsUI.Docking.dll
+C:\Users\Stephen Baynham\projects\dialogue\Dev\TeiravonBuild\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Stephen Baynham\projects\dialogue\Dev\TeiravonBuild\bin\Debug\1.pdb
+C:\Users\Stephen Baynham\projects\dialogue\Dev\TeiravonBuild\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\Stephen Baynham\projects\dialogue\Dev\TeiravonBuild\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Stephen Baynham\projects\dialogue\Dev\TeiravonBuild\obj\Debug\TeiravonBuild.csprojResolveAssemblyReference.cache
+C:\Users\Stephen Baynham\projects\dialogue\Dev\TeiravonBuild\obj\Debug\TeiravonBuild.Properties.Resources.resources
+C:\Users\Stephen Baynham\projects\dialogue\Dev\TeiravonBuild\obj\Debug\TeiravonBuild.csproj.GenerateResource.Cache
+C:\Users\Stephen Baynham\projects\dialogue\Dev\TeiravonBuild\obj\Debug\TeiravonBuild.exe
+C:\Users\Stephen Baynham\projects\dialogue\Dev\TeiravonBuild\obj\Debug\TeiravonBuild.pdb

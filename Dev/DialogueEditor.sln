@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DefaultBuild", "DefaultBuil
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoBuild", "DemoBuild\DemoBuild.csproj", "{6EE706EC-D9AC-45DD-ABCD-776A784C7A5B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeiravonBuild", "TeiravonBuild\TeiravonBuild.csproj", "{D9A6E102-ED65-4BF3-9010-90848E9E0E61}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{6EE706EC-D9AC-45DD-ABCD-776A784C7A5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6EE706EC-D9AC-45DD-ABCD-776A784C7A5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6EE706EC-D9AC-45DD-ABCD-776A784C7A5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9A6E102-ED65-4BF3-9010-90848E9E0E61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9A6E102-ED65-4BF3-9010-90848E9E0E61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9A6E102-ED65-4BF3-9010-90848E9E0E61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9A6E102-ED65-4BF3-9010-90848E9E0E61}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
