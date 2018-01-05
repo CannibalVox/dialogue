@@ -28,9 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.GroupBox groupBox3;
-            System.Windows.Forms.Label label8;
-            System.Windows.Forms.Label label7;
             System.Windows.Forms.TabControl tabControl1;
             System.Windows.Forms.TabPage tabPage1;
             System.Windows.Forms.GroupBox groupBox4;
@@ -74,17 +71,15 @@
             System.Windows.Forms.Label label17;
             System.Windows.Forms.Button button15;
             System.Windows.Forms.Button button16;
-            System.Windows.Forms.GroupBox groupBox1;
+            System.Windows.Forms.Label label21;
+            System.Windows.Forms.Label label20;
+            System.Windows.Forms.Label label3;
             System.Windows.Forms.Button button17;
             System.Windows.Forms.Button button22;
             System.Windows.Forms.Button button23;
             System.Windows.Forms.Button button24;
-            System.Windows.Forms.Label label3;
-            System.Windows.Forms.Label label20;
-            System.Windows.Forms.Label label21;
+            System.Windows.Forms.GroupBox groupBox1;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DocumentProject));
-            this.textBoxCharsReplies = new System.Windows.Forms.TextBox();
-            this.textBoxCharsSentences = new System.Windows.Forms.TextBox();
             this.checkBoxPackageExport = new System.Windows.Forms.CheckBox();
             this.textBoxPackage = new System.Windows.Forms.TextBox();
             this.listBoxPackages = new System.Windows.Forms.ListBox();
@@ -116,17 +111,14 @@
             this.comboBoxVoiceKitVoiceActor = new System.Windows.Forms.ComboBox();
             this.textBoxVoiceKitName = new System.Windows.Forms.TextBox();
             this.listBoxVoiceKits = new System.Windows.Forms.ListBox();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.textBoxConstantWorkstring = new System.Windows.Forms.TextBox();
+            this.textBoxConstantComment = new System.Windows.Forms.RichTextBox();
+            this.textBoxConstantID = new System.Windows.Forms.TextBox();
+            this.listBoxConstants = new System.Windows.Forms.ListBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.listBoxCustomLists = new System.Windows.Forms.ListBox();
             this.listBoxCustomListData = new System.Windows.Forms.ListBox();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.listBoxConstants = new System.Windows.Forms.ListBox();
-            this.textBoxConstantID = new System.Windows.Forms.TextBox();
-            this.textBoxConstantComment = new System.Windows.Forms.RichTextBox();
-            this.textBoxConstantWorkstring = new System.Windows.Forms.TextBox();
-            groupBox3 = new System.Windows.Forms.GroupBox();
-            label8 = new System.Windows.Forms.Label();
-            label7 = new System.Windows.Forms.Label();
             tabControl1 = new System.Windows.Forms.TabControl();
             tabPage1 = new System.Windows.Forms.TabPage();
             groupBox4 = new System.Windows.Forms.GroupBox();
@@ -170,15 +162,14 @@
             label17 = new System.Windows.Forms.Label();
             button15 = new System.Windows.Forms.Button();
             button16 = new System.Windows.Forms.Button();
-            groupBox1 = new System.Windows.Forms.GroupBox();
+            label21 = new System.Windows.Forms.Label();
+            label20 = new System.Windows.Forms.Label();
+            label3 = new System.Windows.Forms.Label();
             button17 = new System.Windows.Forms.Button();
             button22 = new System.Windows.Forms.Button();
             button23 = new System.Windows.Forms.Button();
             button24 = new System.Windows.Forms.Button();
-            label3 = new System.Windows.Forms.Label();
-            label20 = new System.Windows.Forms.Label();
-            label21 = new System.Windows.Forms.Label();
-            groupBox3.SuspendLayout();
+            groupBox1 = new System.Windows.Forms.GroupBox();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             groupBox4.SuspendLayout();
@@ -189,57 +180,10 @@
             this.tabPage3.SuspendLayout();
             groupBox6.SuspendLayout();
             groupBox5.SuspendLayout();
+            this.tabPage5.SuspendLayout();
             this.tabPage4.SuspendLayout();
             groupBox1.SuspendLayout();
-            this.tabPage5.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // groupBox3
-            // 
-            groupBox3.Controls.Add(label8);
-            groupBox3.Controls.Add(label7);
-            groupBox3.Controls.Add(this.textBoxCharsReplies);
-            groupBox3.Controls.Add(this.textBoxCharsSentences);
-            groupBox3.Location = new System.Drawing.Point(8, 158);
-            groupBox3.Name = "groupBox3";
-            groupBox3.Size = new System.Drawing.Size(187, 81);
-            groupBox3.TabIndex = 5;
-            groupBox3.TabStop = false;
-            groupBox3.Text = "Workstrings";
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Location = new System.Drawing.Point(6, 50);
-            label8.Name = "label8";
-            label8.Size = new System.Drawing.Size(101, 13);
-            label8.TabIndex = 3;
-            label8.Text = "Max Chars Replies :";
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Location = new System.Drawing.Point(6, 24);
-            label7.Name = "label7";
-            label7.Size = new System.Drawing.Size(117, 13);
-            label7.TabIndex = 2;
-            label7.Text = "Max Chars Sentences :";
-            // 
-            // textBoxCharsReplies
-            // 
-            this.textBoxCharsReplies.Location = new System.Drawing.Point(129, 47);
-            this.textBoxCharsReplies.Name = "textBoxCharsReplies";
-            this.textBoxCharsReplies.Size = new System.Drawing.Size(41, 20);
-            this.textBoxCharsReplies.TabIndex = 1;
-            this.textBoxCharsReplies.TextChanged += new System.EventHandler(this.OnMaxCharsReplyChanged);
-            // 
-            // textBoxCharsSentences
-            // 
-            this.textBoxCharsSentences.Location = new System.Drawing.Point(129, 21);
-            this.textBoxCharsSentences.Name = "textBoxCharsSentences";
-            this.textBoxCharsSentences.Size = new System.Drawing.Size(41, 20);
-            this.textBoxCharsSentences.TabIndex = 0;
-            this.textBoxCharsSentences.TextChanged += new System.EventHandler(this.OnMaxCharsSentenceChanged);
             // 
             // tabControl1
             // 
@@ -264,7 +208,6 @@
             tabPage1.AutoScroll = true;
             tabPage1.Controls.Add(groupBox4);
             tabPage1.Controls.Add(groupBox2);
-            tabPage1.Controls.Add(groupBox3);
             tabPage1.Location = new System.Drawing.Point(4, 22);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -1033,45 +976,6 @@
             this.listBoxVoiceKits.TabIndex = 14;
             this.listBoxVoiceKits.SelectedIndexChanged += new System.EventHandler(this.OnVoiceKitIndexChanged);
             // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(groupBox1);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(816, 548);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Debug";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // groupBox1
-            // 
-            groupBox1.Controls.Add(this.listBoxCustomLists);
-            groupBox1.Controls.Add(this.listBoxCustomListData);
-            groupBox1.Location = new System.Drawing.Point(8, 15);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new System.Drawing.Size(290, 135);
-            groupBox1.TabIndex = 3;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "Custom Lists";
-            // 
-            // listBoxCustomLists
-            // 
-            this.listBoxCustomLists.FormattingEnabled = true;
-            this.listBoxCustomLists.Location = new System.Drawing.Point(6, 19);
-            this.listBoxCustomLists.Name = "listBoxCustomLists";
-            this.listBoxCustomLists.Size = new System.Drawing.Size(136, 108);
-            this.listBoxCustomLists.TabIndex = 0;
-            this.listBoxCustomLists.SelectedIndexChanged += new System.EventHandler(this.OnCustomListIndexChanged);
-            // 
-            // listBoxCustomListData
-            // 
-            this.listBoxCustomListData.FormattingEnabled = true;
-            this.listBoxCustomListData.Location = new System.Drawing.Point(148, 19);
-            this.listBoxCustomListData.Name = "listBoxCustomListData";
-            this.listBoxCustomListData.SelectionMode = System.Windows.Forms.SelectionMode.None;
-            this.listBoxCustomListData.Size = new System.Drawing.Size(136, 108);
-            this.listBoxCustomListData.TabIndex = 1;
-            // 
             // tabPage5
             // 
             this.tabPage5.Controls.Add(this.textBoxConstantWorkstring);
@@ -1091,6 +995,58 @@
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Constants";
             this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // textBoxConstantWorkstring
+            // 
+            this.textBoxConstantWorkstring.Location = new System.Drawing.Point(227, 40);
+            this.textBoxConstantWorkstring.Name = "textBoxConstantWorkstring";
+            this.textBoxConstantWorkstring.Size = new System.Drawing.Size(171, 20);
+            this.textBoxConstantWorkstring.TabIndex = 35;
+            this.textBoxConstantWorkstring.TextChanged += new System.EventHandler(this.OnConstantWorkstringChanged);
+            // 
+            // label21
+            // 
+            label21.AutoSize = true;
+            label21.Location = new System.Drawing.Point(157, 43);
+            label21.Name = "label21";
+            label21.Size = new System.Drawing.Size(64, 13);
+            label21.TabIndex = 36;
+            label21.Text = "Workstring :";
+            // 
+            // textBoxConstantComment
+            // 
+            this.textBoxConstantComment.Location = new System.Drawing.Point(158, 92);
+            this.textBoxConstantComment.Name = "textBoxConstantComment";
+            this.textBoxConstantComment.Size = new System.Drawing.Size(432, 75);
+            this.textBoxConstantComment.TabIndex = 33;
+            this.textBoxConstantComment.Text = "";
+            this.textBoxConstantComment.TextChanged += new System.EventHandler(this.OnConstantCommentChanged);
+            // 
+            // label20
+            // 
+            label20.AutoSize = true;
+            label20.Location = new System.Drawing.Point(157, 76);
+            label20.Name = "label20";
+            label20.Size = new System.Drawing.Size(62, 13);
+            label20.TabIndex = 34;
+            label20.Text = "Comments :";
+            // 
+            // textBoxConstantID
+            // 
+            this.textBoxConstantID.Location = new System.Drawing.Point(227, 14);
+            this.textBoxConstantID.Name = "textBoxConstantID";
+            this.textBoxConstantID.Size = new System.Drawing.Size(171, 20);
+            this.textBoxConstantID.TabIndex = 31;
+            this.textBoxConstantID.TextChanged += new System.EventHandler(this.OnConstantIDChanged);
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new System.Drawing.Point(157, 17);
+            label3.Name = "label3";
+            label3.Size = new System.Drawing.Size(24, 13);
+            label3.TabIndex = 32;
+            label3.Text = "ID :";
             // 
             // button17
             // 
@@ -1145,57 +1101,44 @@
             button24.UseVisualStyleBackColor = true;
             button24.Click += new System.EventHandler(this.OnMoveConstantUp);
             // 
-            // textBoxConstantID
+            // tabPage4
             // 
-            this.textBoxConstantID.Location = new System.Drawing.Point(227, 14);
-            this.textBoxConstantID.Name = "textBoxConstantID";
-            this.textBoxConstantID.Size = new System.Drawing.Size(171, 20);
-            this.textBoxConstantID.TabIndex = 31;
-            this.textBoxConstantID.TextChanged += new System.EventHandler(this.OnConstantIDChanged);
+            this.tabPage4.Controls.Add(groupBox1);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(816, 548);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Debug";
+            this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // groupBox1
             // 
-            label3.AutoSize = true;
-            label3.Location = new System.Drawing.Point(157, 17);
-            label3.Name = "label3";
-            label3.Size = new System.Drawing.Size(24, 13);
-            label3.TabIndex = 32;
-            label3.Text = "ID :";
+            groupBox1.Controls.Add(this.listBoxCustomLists);
+            groupBox1.Controls.Add(this.listBoxCustomListData);
+            groupBox1.Location = new System.Drawing.Point(8, 15);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new System.Drawing.Size(290, 135);
+            groupBox1.TabIndex = 3;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Custom Lists";
             // 
-            // textBoxConstantComment
+            // listBoxCustomLists
             // 
-            this.textBoxConstantComment.Location = new System.Drawing.Point(158, 92);
-            this.textBoxConstantComment.Name = "textBoxConstantComment";
-            this.textBoxConstantComment.Size = new System.Drawing.Size(432, 75);
-            this.textBoxConstantComment.TabIndex = 33;
-            this.textBoxConstantComment.Text = "";
-            this.textBoxConstantComment.TextChanged += new System.EventHandler(this.OnConstantCommentChanged);
+            this.listBoxCustomLists.FormattingEnabled = true;
+            this.listBoxCustomLists.Location = new System.Drawing.Point(6, 19);
+            this.listBoxCustomLists.Name = "listBoxCustomLists";
+            this.listBoxCustomLists.Size = new System.Drawing.Size(136, 108);
+            this.listBoxCustomLists.TabIndex = 0;
+            this.listBoxCustomLists.SelectedIndexChanged += new System.EventHandler(this.OnCustomListIndexChanged);
             // 
-            // label20
+            // listBoxCustomListData
             // 
-            label20.AutoSize = true;
-            label20.Location = new System.Drawing.Point(157, 76);
-            label20.Name = "label20";
-            label20.Size = new System.Drawing.Size(62, 13);
-            label20.TabIndex = 34;
-            label20.Text = "Comments :";
-            // 
-            // textBoxConstantWorkstring
-            // 
-            this.textBoxConstantWorkstring.Location = new System.Drawing.Point(227, 40);
-            this.textBoxConstantWorkstring.Name = "textBoxConstantWorkstring";
-            this.textBoxConstantWorkstring.Size = new System.Drawing.Size(171, 20);
-            this.textBoxConstantWorkstring.TabIndex = 35;
-            this.textBoxConstantWorkstring.TextChanged += new System.EventHandler(this.OnConstantWorkstringChanged);
-            // 
-            // label21
-            // 
-            label21.AutoSize = true;
-            label21.Location = new System.Drawing.Point(157, 43);
-            label21.Name = "label21";
-            label21.Size = new System.Drawing.Size(64, 13);
-            label21.TabIndex = 36;
-            label21.Text = "Workstring :";
+            this.listBoxCustomListData.FormattingEnabled = true;
+            this.listBoxCustomListData.Location = new System.Drawing.Point(148, 19);
+            this.listBoxCustomListData.Name = "listBoxCustomListData";
+            this.listBoxCustomListData.SelectionMode = System.Windows.Forms.SelectionMode.None;
+            this.listBoxCustomListData.Size = new System.Drawing.Size(136, 108);
+            this.listBoxCustomListData.TabIndex = 1;
             // 
             // DocumentProject
             // 
@@ -1210,8 +1153,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Project";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.OnClose);
-            groupBox3.ResumeLayout(false);
-            groupBox3.PerformLayout();
             tabControl1.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
             groupBox4.ResumeLayout(false);
@@ -1227,18 +1168,15 @@
             groupBox6.PerformLayout();
             groupBox5.ResumeLayout(false);
             groupBox5.PerformLayout();
-            this.tabPage4.ResumeLayout(false);
-            groupBox1.ResumeLayout(false);
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
+            this.tabPage4.ResumeLayout(false);
+            groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox textBoxCharsReplies;
-        private System.Windows.Forms.TextBox textBoxCharsSentences;
         private System.Windows.Forms.TextBox textBoxHeight;
         private System.Windows.Forms.ComboBox comboBoxBuild;
         private System.Windows.Forms.ListBox listBoxActors;

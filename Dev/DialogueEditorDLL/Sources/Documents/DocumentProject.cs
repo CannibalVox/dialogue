@@ -55,10 +55,6 @@ namespace DialogueEditor
 
             //---- General
 
-            //General parameters
-            textBoxCharsSentences.Text = project.MaxLengthSentence.ToString();
-            textBoxCharsReplies.Text = project.MaxLengthReply.ToString();
-
             //Languages
             listBoxLanguages.DataSource = new BindingSource(project.ListLanguages, null);
             listBoxLanguages.DisplayMember = "Name";
@@ -958,30 +954,6 @@ namespace DialogueEditor
                 return;
 
             currentPackage.Export = checkBoxPackageExport.Checked;
-
-            SetDirty();
-        }
-
-        private void OnMaxCharsSentenceChanged(object sender, EventArgs e)
-        {
-            if (!ready)
-                return;
-
-            int value = 0;
-            int.TryParse(textBoxCharsSentences.Text, out value);
-            ResourcesHandler.Project.MaxLengthSentence = value;
-
-            SetDirty();
-        }
-
-        private void OnMaxCharsReplyChanged(object sender, EventArgs e)
-        {
-            if (!ready)
-                return;
-
-            int value = 0;
-            int.TryParse(textBoxCharsReplies.Text, out value);
-            ResourcesHandler.Project.MaxLengthReply = value;
 
             SetDirty();
         }

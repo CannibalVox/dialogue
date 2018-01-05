@@ -341,11 +341,6 @@ namespace DialogueEditor
                             }
                         }
                     }
-
-                    if (nodeSentence.Sentence.Length > project.MaxLengthSentence)
-                    {
-                        EditorCore.LogWarning(String.Format("{0} {1} - Sentence has too many characters", dialogue.GetName(), node.ID), dialogue, node);
-                    }
                 }
                 else if (node is DialogueNodeChoice)
                 {
@@ -359,11 +354,6 @@ namespace DialogueEditor
                 else if (node is DialogueNodeReply)
                 {
                     var nodeReply = node as DialogueNodeReply;
-
-                    if (nodeReply.Reply.Length > project.MaxLengthReply)
-                    {
-                        EditorCore.LogWarning(String.Format("{0} {1} - Reply has too many characters", dialogue.GetName(), node.ID), dialogue, node);
-                    }
                 }
                 else if (node is DialogueNodeGoto)
                 {
