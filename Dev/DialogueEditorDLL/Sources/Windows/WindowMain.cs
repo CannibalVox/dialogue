@@ -637,6 +637,15 @@ namespace DialogueEditor
             }
         }
 
+        private void exportShardsCodeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (ResourcesHandler.Project != null)
+            {
+                if (ExporterDialogues.ExportToAriaCode())
+                    EditorCore.LogInfo("Export Code Finished");
+            }
+        }
+
         private void OnExportLocalizationUnreal4(object sender, EventArgs e)
         {
             if (ResourcesHandler.Project != null)
