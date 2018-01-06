@@ -135,9 +135,7 @@ namespace DialogueEditor
         {
             foreach (var node in nodes)
             {
-                string typeName, assemblyName;
-                EditorCore.SerializationBinder.BindToName(node.GetType(), out assemblyName, out typeName);
-                OpenBracket(string.Format("[{0}]",node.ID), "Dialogue"+typeName);
+                OpenBracket("", "DialogueNode");
                 RenderObject(node);
                 CloseClassBracket();
             }
