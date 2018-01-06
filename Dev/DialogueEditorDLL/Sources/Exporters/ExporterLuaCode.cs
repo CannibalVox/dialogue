@@ -129,6 +129,12 @@ namespace DialogueEditor
             RenderObject(orderedListNodes);
 
             CloseBracket();
+
+            OpenBracket("IDToIndex");
+            for (int i = 0; i < orderedListNodes.Count; i++)
+            {
+                WriteNumber("[" + orderedListNodes[i].ID + "]", i);
+            }
         }
 
         private void RenderObject(List<DialogueNode> nodes)
