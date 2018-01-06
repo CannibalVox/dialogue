@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -208,6 +209,11 @@ namespace DialogueEditor
 
                 object objValue = prop.GetValue(obj);
 
+                if (objValue.GetType().IsGenericType && objValue.GetType().GetGenericTypeDefinition() == typeof(List<>))
+                {
+                    RenderAutoList(prop.Name, ((IEnumerable)objValue).OfType<object>().ToList());
+                    continue;
+                }
                 if (objValue is bool)
                 {
                     WriteBool(prop.Name, (bool)objValue);
