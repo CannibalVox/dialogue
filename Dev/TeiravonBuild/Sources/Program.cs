@@ -39,9 +39,9 @@ namespace TeiravonBuild
             // Additional lists items
             EditorCore.CustomLists.Add("TargetActions", new Dictionary<string, string>());
             EditorCore.CustomLists["TargetActions"].Add("AttackEnemy", "Attack Player");
-            EditorCore.CustomLists["TargetActions"].Add("Flee", "Flee");
+            EditorCore.CustomLists["TargetActions"].Add("ForceFlee", "Flee");
             EditorCore.CustomLists["TargetActions"].Add("ClearTarget", "End Combat");
-            EditorCore.CustomLists["TargetActions"].Add("Was Revealed", "Revealed");
+            EditorCore.CustomLists["TargetActions"].Add("WasRevealed", "Revealed");
             EditorCore.CustomLists["TargetActions"].Add("DisableAI", "Disable");
             EditorCore.CustomLists["TargetActions"].Add("EnableAI", "Enable");
             EditorCore.CustomLists["TargetActions"].Add("OnResurrect", "Resurrected");
@@ -57,7 +57,7 @@ namespace TeiravonBuild
 
             EditorCore.BindAttribute(typeof(NodeConditionHasUseCase), "HasUseCase", "Has Use Case");
             EditorCore.BindAttribute(typeof(NodeConditionObjVarNumber), "ObjVarNumber", "Compare Object Var (Number)");
-            EditorCore.BindAttribute(typeof(NodeConditionObjVarString), "ObjVarString", "Compare Object Var (String)");
+            EditorCore.BindAttribute(typeof(NodeConditionStringCompare), "CompareString", "Compare Two Strings");
             EditorCore.BindAttribute(typeof(NodeConditionTimerTicking), "TimerTicking", "Is Timer Ticking");
 
             // Delegate post-load project
