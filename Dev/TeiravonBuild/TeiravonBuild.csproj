@@ -59,7 +59,7 @@
     <Compile Include="Sources\NodeAttributes\NodeActionNPCAction.cs" />
     <Compile Include="Sources\NodeAttributes\NodeConditionHasUseCase.cs" />
     <Compile Include="Sources\NodeAttributes\NodeConditionObjVarNumber.cs" />
-    <Compile Include="Sources\NodeAttributes\NodeConditionObjVarString.cs" />
+    <Compile Include="Sources\NodeAttributes\NodeConditionStringCompare.cs" />
     <Compile Include="Sources\NodeAttributes\NodeConditionTimerTicking.cs" />
     <Compile Include="Sources\Program.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">

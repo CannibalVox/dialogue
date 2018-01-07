@@ -8,21 +8,21 @@ using System.Threading.Tasks;
 
 namespace TeiravonBuild
 {
-    class NodeConditionObjVarString : NodeCondition
+    class NodeConditionStringCompare : NodeCondition
     {
-        [DisplayName("Object Var")]
-        public string ObjVar { get; set; }
+        [DisplayName("Comparison Value")]
+        public string ComparisonVal { get; set; }
         public string Value { get; set; }
 
-        public NodeConditionObjVarString()
+        public NodeConditionStringCompare()
         {
-            ObjVar = "Key";
+            ComparisonVal = "Key";
             Value = "...";
         }
 
         protected override string GetDisplayText_Impl()
         {
-            return "[Object Var] [" + ObjVar + " == \"" + Value + "\"]";
+            return "[Compare] [\"" + ComparisonVal + "\" == \"" + Value + "\"]";
         }
     }
 }
