@@ -143,7 +143,7 @@ namespace DialogueEditor
                     string dialogFile = Path.Combine(packageDirectory, requireDialog.GetName() + ".lua");
                     if (File.Exists(dialogFile))
                     {
-                        packageMainBuilder.AppendFormat("require 'globals.static_data.generated_dialog.{0}.{1}{2}", package.Name, requireDialog.GetName(), Environment.NewLine);
+                        packageMainBuilder.AppendFormat("require 'globals.static_data.generated_dialog.{0}.{1}'{2}", package.Name, requireDialog.GetName(), Environment.NewLine);
                     }
                 }
 
@@ -158,7 +158,7 @@ namespace DialogueEditor
             {
                 if (File.Exists(Path.Combine(outputDirectory, package.Name, "main.lua")))
                 {
-                    builder.AppendFormat("require 'globals.static_data.generated_dialog.{0}.main{1}", package.Name, Environment.NewLine);
+                    builder.AppendFormat("require 'globals.static_data.generated_dialog.{0}.main'{1}", package.Name, Environment.NewLine);
                 }
             }
 
