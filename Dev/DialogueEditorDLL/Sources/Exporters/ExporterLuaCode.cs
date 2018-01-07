@@ -22,7 +22,7 @@ namespace DialogueEditor
         {
             OpenBracket(string.Format("GeneratedDialog.{0}.{1}", dialog.PackageName, dialog.GetName()), "Dialogue");
             RenderObject(dialog);
-            CloseBracket();
+            CloseClassBracket();
             builder.AppendLine();
         }
 
@@ -137,6 +137,7 @@ namespace DialogueEditor
             {
                 WriteNumber("[" + orderedListNodes[i].ID + "]", i);
             }
+            CloseBracket();
         }
 
         private void RenderObject(List<DialogueNode> nodes)
