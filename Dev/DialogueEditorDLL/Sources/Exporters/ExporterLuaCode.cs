@@ -122,6 +122,7 @@ namespace DialogueEditor
 
         private void RenderObject(Dialogue dialog)
         {
+            WriteString("Name", dialog.GetName());
             WriteNumber("RootNode", dialog.RootNodeID);
             OpenBracket("NodeList");
 
@@ -175,12 +176,12 @@ namespace DialogueEditor
 
             if (node is DialogueNodeSentence)
             {
-                WriteString("Text", ((DialogueNodeSentence)node).Sentence);
+                WriteString("Sentence", ((DialogueNodeSentence)node).Sentence);
             }
 
             if (node is DialogueNodeReply)
             {
-                WriteString("Text", ((DialogueNodeReply)node).Reply);
+                WriteString("Reply", ((DialogueNodeReply)node).Reply);
             }
 
             RenderAutoList("Conditions", node.Conditions.ToList<object>());
