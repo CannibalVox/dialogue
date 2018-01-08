@@ -135,7 +135,7 @@ namespace DialogueEditor
             OpenBracket("IDToIndex");
             for (int i = 0; i < orderedListNodes.Count; i++)
             {
-                WriteNumber("[" + orderedListNodes[i].ID + "]", i);
+                WriteNumber("[" + orderedListNodes[i].ID + "]", i+1);
             }
             CloseBracket();
         }
