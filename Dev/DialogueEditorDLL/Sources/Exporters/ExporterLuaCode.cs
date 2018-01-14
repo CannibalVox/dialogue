@@ -20,7 +20,7 @@ namespace DialogueEditor
 
         public void WriteDialog(Dialogue dialog)
         {
-            OpenBracket(string.Format("GeneratedDialog.{0}.{1}", dialog.PackageName, dialog.GetName()), "Dialogue");
+            OpenBracket(string.Format("GeneratedDialog.{0}.{1}", dialog.PackageName, dialog.GetName()), "GeneratedDialogTree");
             RenderObject(dialog);
             CloseClassBracket();
             builder.AppendLine();
@@ -145,7 +145,7 @@ namespace DialogueEditor
         {
             foreach (var node in nodes)
             {
-                OpenBracket("", "DialogueNode");
+                OpenBracket("", "GeneratedDialogNode");
                 RenderObject(node);
                 CloseClassBracket();
             }
