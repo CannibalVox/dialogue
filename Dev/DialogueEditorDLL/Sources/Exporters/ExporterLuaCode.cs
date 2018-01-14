@@ -122,6 +122,7 @@ namespace DialogueEditor
 
         private void RenderObject(Dialogue dialog)
         {
+            WriteString("Package", dialog.PackageName);
             WriteString("Name", dialog.GetName());
             WriteNumber("RootNode", dialog.RootNodeID);
             OpenBracket("NodeList");
